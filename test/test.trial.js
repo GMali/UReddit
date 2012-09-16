@@ -1,19 +1,43 @@
-var mocha  = require('mocha');
-var should = require('should');
-var Bar    = require('../lib/uReddit.js').Bar
-var def    = require('../lib/uReddit.js').defaults
+var should  = require('should');
+var UReddit = require('../lib/uReddit.js')
 
+var uni = new UReddit();
 
-describe('Testing Bar', function() {
-	
-	describe('Default', function() {
-		it('should have a property ID', function() {
-			def.should.have.property('id');
+describe('UReddit', function() {
+	it('should have a catalog', function(done) {
+		uni.catalog(function(data){
+			should.exist(data);
+			// done();
 		});
-
-		it('should say hey', function(){
-			var foo = Bar();
-			foo.should.equal("hey");
+	});
+	it('should have a category', function(done) {
+		uni.category("23442", function(data){
+			should.exist(data);
+			// done();
+		});
+	});
+	it('should have a class', function(done) {
+		uni.class("23464", function(data){
+			should.exist(data);
+			// done();
+		});
+	});
+	it('should have a lecture', function(done) {
+		uni.lecture("23464", function(data){
+			should.exist(data);
+			// done();
+		});
+	});
+	it('should have a link', function(done) {
+		uni.link("23464", function(data){
+			should.exist(data);
+			// done();
+		});
+	});
+	it('should have a user', function(done) {
+		uni.user("8", function(data){
+			should.exist(data);
+			// done();
 		});
 	});
 });

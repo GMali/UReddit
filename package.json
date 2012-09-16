@@ -2,11 +2,10 @@
   "name": "uReddit",
   "version": "0.0.1",
   "description": "API Wrapper for the University of Reddit",
-  "main": "./lib/main",
-  "bin": {
-    "uReddit": "./bin/uReddit.js"
+  "main": "./lib/uReddit",
+  "dependencies": {
+    "request": "2.11.x"
   },
-  "dependencies": {},
   "devDependencies": {
     "mocha": "0.3.x",
     "should": "1.1.x"
