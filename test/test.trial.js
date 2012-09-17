@@ -17,7 +17,7 @@ describe('UReddit', function() {
 		});
 	});
 	it('should have a class', function(done) {
-		uni.class("23464", function(data){
+		uni.class("23466", function(data){
 			should.exist(data);
 			// done();
 		});
