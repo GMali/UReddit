@@ -1,6 +1,6 @@
 {
-  "name": "UReddit",
-  "version": "0.0.1",
+  "name": "ureddit",
+  "version": "1.0.0",
   "description": "API Wrapper for the University of Reddit",
   "keywords":[
     "Reddit",
@@ -28,7 +28,7 @@
   "licenses":[
     {
       "type":"MIT",
-      "url":""
+      "url":"http://github.com/GMali/UReddit/blob/master/LICENSE"
     }
   ]
 }
