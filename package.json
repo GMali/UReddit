@@ -1,8 +1,20 @@
 {
-  "name": "uReddit",
+  "name": "UReddit",
   "version": "0.0.1",
   "description": "API Wrapper for the University of Reddit",
-  "main": "./lib/uReddit",
+  "keywords":[
+    "Reddit",
+    "University",
+    "UReddit",
+    "API"
+  ],
+  "author":{
+    "name":"Gaurav Mali",
+    "email":"hello@gauravmali.com",
+    "url":"http://www.gauravmali.com"
+  },
+  "repository": "http://github.com/GMali/UReddit/",
+  "main": "./lib/UReddit",
   "dependencies": {
     "request": "2.11.x"
   },
@@ -13,6 +25,10 @@
   "scripts": {
     "test": "make test"
   },
-  "repository": "",
-  "author": "Gaurav Mali <hello@gauravmali.com>"
+  "licenses":[
+    {
+      "type":"MIT",
+      "url":""
+    }
+  ]
 }
